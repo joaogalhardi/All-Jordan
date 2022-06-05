@@ -1,0 +1,203 @@
+/* global */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#menu-mobile{
+  display: flex;
+  gap: 40px; 
+}
+
+.bag svg{
+  border-radius: 5px;
+  box-shadow: 0px 1.5px 1.5px rgb(0 ,0, 0, 0.25); 
+  cursor: pointer;
+}
+
+.bag svg path{
+  transition: 0.2s ease;
+}
+
+.bag svg path.ativo{
+  fill: rgb(172, 5, 5);
+}
+
+@media screen and (max-width:500px){
+  
+.logo a > img{
+  width: 200px;
+}
+
+#menu-mobile{
+  display: flex;
+  gap: 15px;  
+}
+}
+
+/* produtos */
+
+#produtos{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(230px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.produto{
+  display: grid;
+  gap: 5px;
+}
+
+.produto :nth-child(2){
+  font-family:"Cabin", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+.produto-imagem{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 24px;
+  width: 250px;
+  height: 230px;
+}
+
+.produto-imagem img {
+  width: 250px;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.produto-imagem img:hover {
+  transform: scale3d(1.2,1.2,1.2);
+}
+
+.produto-descricao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produto-descricao p{
+  font-family: "Poppins", "sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+  color: #575757;
+}
+
+.produto-descricao a img{
+  transition: 0.3s ease-out;
+}
+
+.produto-descricao a img:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+
+@media screen and (max-width:1300px){
+  
+#produtos{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+}
+
+ /* carrinho  */
+
+  .h2{
+    font-family: "Poppins";
+    font-weight: 400;
+    padding: 5px 5px 5px 20px;
+    background:linear-gradient( rgb(172, 5, 5, 90%) 50%, rgb(124, 6, 6, 90%));
+    color: #fff;
+  }
+
+ #carrinho.ativo {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+ 
+ #carrinho.ativo::after {
+   content: "COMPRAR";
+   font-family: "Poppins";
+   align-self: center;
+   display: flex;
+   flex-direction: column;
+   padding: 5px 10px;
+   border-radius: 10px;
+   color: #fff;
+   background: rgb(172, 5, 5);
+   cursor: pointer;
+ }
+
+ .carrinho-img{
+   display: flex;
+   align-items: center;
+   background: #fff;
+   border-radius: 20px;
+   padding: 10px;
+   height: 100px;
+   cursor: pointer;
+   transition: 0.3s ease-out;
+ }
+ 
+ .carrinho-img:hover{
+   transform: scale3d(1.1,1.1,1.1);  
+ }
+
+ .carrinho-img img{
+   width: 100px;  
+ }
+
+  .carrinho-descricao{
+    margin-top: 2px;
+    font-family: "Cabin";
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .carrinho-descricao :nth-child(2){
+    color: #575757;
+  }
+ 
