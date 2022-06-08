@@ -4,7 +4,7 @@
 <br>
 </h1>
 
-<h2 align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in Javascript and an e-commerce.</strong></h2>
+<h2 align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in Javascript and simulate an e-commerce.</strong></h2>
 
 <div align="center" >
   <img src="" alt="screen standard">
