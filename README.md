@@ -7,8 +7,8 @@
 <h2 align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in Javascript and simulate an e-commerce.</strong></h2>
 
 <div align="center" >
-  <img src="" alt="screen standard">
-  <img src="" alt="screen-mobile"  height="425">
+  <img src="./video/all-jordan.gif" alt="screen standard">
+  <img src="./video/all-jordan-mobile.gif" alt="screen-mobile"  height="425">
 </div>
 
 ---
