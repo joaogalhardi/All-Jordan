@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./img/icon.svg" alt="All Jordan" width="100" >
   <h1> All Jordan </h1>
-<div>
+</div>
 
 <h2 align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in Javascript and simulate an e-commerce.</strong></h2>
 
